@@ -1,0 +1,30 @@
+<div class="container">
+  <section id="list">
+    <div ng-if="todoList.tasks.length == 0">
+      <h4>Wow. You have nothing else to do. <strong>Enjoy the rest of your day!</strong></h4>
+    </div>
+    <div ng-if="todoList.tasks.length > 0">
+      <table class="table table-striped">
+        <tbody>
+          <tr ng-repeat="task in todoList.tasks track by $index">
+            <th scope="row" ng-class="task.done ? 'strike' : ''" data-ng-click="todoList.details(task.uuid)">{{task.uuid}}</th>
+            <td ng-class="task.done ? 'strike' : ''" data-ng-click="todoList.details(task.uuid)">{{task.type}}</td>
+            <td ng-class="task.done ? 'strike' : ''" data-ng-click="todoList.details(task.uuid)">{{task.content | limitTo: 26}}</td>
+            <td ng-class="task.done ? 'strike' : ''" data-ng-click="todoList.details(task.uuid)">{{task.date_created | date:'dd/MM/yyyy'}}</td>
+            <td ng-class="task.done ? 'strike' : ''" data-ng-click="todoList.details(task.uuid)">{{task.done}}</td>
+            <td>
+              <input type="checkbox" title="Done" data-ng-click="todoList.done(task.uuid)"/>
+            </td>
+            <td>
+              <img src="src/assets/images/remove.png" title="Remove" data-ng-click="todoList.remove(task.uuid, $index)">
+            </td>
+          </tr>
+          <tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <div class="btn-group">
+    <a class="btn btn-success" ui-sref="todo.new">Add task</a>
+  </div>
+</div>

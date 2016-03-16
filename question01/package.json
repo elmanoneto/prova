@@ -1,0 +1,23 @@
+{
+  "name": "todo-list",
+  "version": "0.0.1",
+  "description": "todo-list challenge",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elmano Neto <elmanoneto@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-storage": "0.0.13",
+    "angular-ui-router": "^0.2.18",
+    "angular-uuid": "0.0.2",
+    "bootstrap-css-only": "^3.3.6"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0"
+  }
+}

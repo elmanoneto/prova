@@ -1,0 +1,40 @@
+section#header header {
+  text-align: center;
+  padding: 10px 0; }
+  section#header header h1 {
+    line-height: 0;
+    font-weight: bold; }
+
+section#list {
+  text-align: center; }
+  section#list img {
+    width: 20px;
+    cursor: pointer; }
+  section#list table .strike {
+    text-decoration: line-through; }
+  section#list table td {
+    cursor: pointer; }
+  section#list table th {
+    cursor: pointer; }
+
+section#details {
+  text-align: center; }
+  section#details ul {
+    list-style-type: none; }
+
+section#form button {
+  background-color: black;
+  border: none;
+  color: white;
+  font-weight: bold; }
+
+div.container a {
+  font-weight: bold;
+  background-color: black;
+  border: none; }
+
+div.container a:hover {
+  background-color: black; }
+
+div.container a:active {
+  background-color: black !important; }

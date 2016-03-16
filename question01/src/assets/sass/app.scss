@@ -1,0 +1,68 @@
+section#header {
+  header {
+    text-align: center;
+    padding: 10px 0;
+    h1 {
+      line-height: 0;
+      font-weight: bold;
+    }
+  }
+}
+
+section#list {
+  text-align: center;
+
+  h4 {
+    // font-weight: bold;
+  }
+
+  img {
+    width: 20px;
+    cursor: pointer;
+  }
+
+  table {
+    .strike {
+      text-decoration: line-through;
+    }
+
+    td {
+      cursor: pointer;
+    }
+    th {
+      cursor: pointer;
+    }
+  }
+}
+
+section#details {
+  text-align: center;
+
+  ul {
+    list-style-type: none;
+  }
+}
+
+section#form {
+  button {
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+div.container {
+  a {
+    font-weight: bold;
+    background-color: black;
+    border: none;
+  }
+
+  a:hover {
+    background-color: black;
+  }
+  a:active {
+    background-color: black !important;
+  }
+}

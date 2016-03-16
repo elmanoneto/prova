@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="todo">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Todolist</title>
+  <link rel="stylesheet" href="src/assets/css/app.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-css-only/css/bootstrap.css">
+</head>
+<body>
+  <div data-ui-view="header"></div>
+  <div data-ui-view="content"></div>
+</body>
+<script src="node_modules/angular/angular.js"></script>
+<script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="node_modules/angular-storage/dist/angular-storage.js"></script>
+<script src="node_modules/angular-uuid/angular-uuid.js"></script>
+<script src="src/main.js"></script>
+<script src="src/controllers/todolist_controller.js"></script>
+<script src="src/services/task_service.js"></script>
+</html>
